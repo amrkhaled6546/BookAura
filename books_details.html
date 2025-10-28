@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookAura | Details</title>
+  <link rel="stylesheet" href="books_details.css">
+  <link rel="stylesheet" href="global.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="bookss-data.js"></script>
+<script src="books_details.js" defer></script>
+
+</head>
+<body>
+  <div class="main-content">
+    <nav class="navbar">
+   <div class="logo">
+        <span>Book<span style="  color: #f3e0c2;" >Aura</span></span>
+  </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="books.html" class="active">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+        <div class="search-box">
+    <input type="text" placeholder="Search books..." id="searchInput">
+    <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+      <img src="https://i.postimg.cc/zvyjrxWW/profile.png" alt="Profile" class="profile-pic">
+              <div style="margin-left: 10px;" id="user-action"></div>
+
+    </nav>
+
+
+    <section class="book-details-section">
+      <div class="book-details-container">
+        <div class="book-cover">
+          <img src="" alt="Book Cover" id="coverImg">
+        </div>
+
+        <div class="book-info">
+          <h1 class="book-title" id="bookTitle">Book Title</h1>
+          <p class="author">by <span id="bookAuthor">Author Name</span></p>
+          <p class="genre" id="bookGenre">Genre</p>
+
+          <div class="book-rating">
+            <div class="stars" id="bookRatingStars">★★★★★</div>
+            <div class="rating-value" id="bookRatingValue">4.5/5</div>
+          </div>
+
+          <p class="description" id="bookDescription">
+         
+          </p>
+
+          <div class="book-actions">
+            <button class="btn blue" id="downloadBtn">📥 Download PDF</button>
+            <button class="btn accent" id="readBtn">📖 Read Online</button>
+            <button id="favBtn" class="btn outline">♡ Add to Favorites</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="author-section">
+      <div class="author-info">
+        <img src="" alt="Author" class="author-img" id="authorImg">
+        <div class="author-details">
+          <h3>About the Author</h3>
+          <p id="authorBio">Author bio will appear here...</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="reviews">
+      <h2>Reviews & Ratings</h2>
+      
+      <div class="review">
+        <h4>★★★★☆ Great Read!</h4>
+        <p>"This book was captivating from start to finish. The character development was exceptional and the plot twists kept me engaged throughout."</p>
+        <span>- Sarah Johnson</span>
+      </div>
+      
+      <div class="review">
+        <h4>★★★★★ Masterpiece</h4>
+        <p>"One of the best books I've read this year. The author's writing style is beautiful and the story is both thought-provoking and entertaining."</p>
+        <span>- Michael Chen</span>
+      </div>
+      
+      <div class="review">
+        <h4>★★★☆☆ Good but Predictable</h4>
+        <p>"Enjoyable read with interesting characters, but the plot was somewhat predictable. Still worth reading for the beautiful prose."</p>
+        <span>- Emma Rodriguez</span>
+      </div>
+
+      <button id="reviewBtn" class="btn accent">⭐️ Add Review</button>
+
+      <div class="review-form" id="reviewForm">
+        <h3>Write a Review</h3>
+        <div class="form-group">
+          <label for="reviewerName">Your Name</label>
+          <input type="text" id="reviewerName" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label>Rating</label>
+          <div class="star-rating" id="starRating">
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reviewText">Your Review</label>
+          <textarea id="reviewText" placeholder="Share your thoughts about this book..."></textarea>
+        </div>
+        <button id="submitReview" class="btn dark">Submit Review</button>
+      </div>
+    </section>
+
+    <section class="related">
+      <h2>Related Books</h2>
+      <div class="related-container">
+        <div class="related-books" id="relatedBooks">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 BookAura. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="home.html">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="global.js"></script>
+  <script src="bookss-data.js"></script>
+  <script src="books_details.js"></script>
+</body>
+</html>

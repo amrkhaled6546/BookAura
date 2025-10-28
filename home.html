@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookAura - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <script src="bookss-data.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+
+
+    <nav class="navbar">
+      <div class="logo">
+      
+        <span>Book<span style="  color: #f3e0c2;" >Aura</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search books..." id="searchInput">
+       
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        
+      </div>
+      <div class="hamburger" id="hamburger">
+  <i class="fa-solid fa-bars"></i>
+</div>
+
+
+      <img src="https://i.postimg.cc/zvyjrxWW/profile.png" alt="Profile" class="profile-pic">
+        <di id="user-action"></div>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover free books, audiobooks & <br> magazines from your library</h1>
+      <p>Thousands of titles, one magical place 📖✨</p>
+      <button class="btn"><a href="books.html">Explore Now</a></button>
+    </div>
+  </section>
+
+  <button id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
+  <section class="books">
+    <div class="books-header">
+      <h2>📘 Popular Books</h2>
+      <div class="slider-controls">
+        <button class="slider-btn prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="slider-btn next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="book-slider" id="popular-slider"></div>
+  </section>
+
+  <section class="books">
+    <div class="books-header">
+      <h2>📘 Novels</h2>
+      <div class="slider-controls">
+        <button class="slider-btn prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="slider-btn next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="book-slider" id="novel-slider"></div>
+  </section>
+
+  <section class="books">
+    <div class="books-header">
+      <h2>📘 Self Improvement</h2>
+      <div class="slider-controls">
+        <button class="slider-btn prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="slider-btn next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="book-slider" id="book-slider"></div>
+  </section>
+
+  <!-- <section class="features">
+  <h2>Why Choose BooksAura?</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <i class="fa-solid fa-book-open"></i>
+      <h4>Thousands of Books</h4>
+      <p>Explore a vast collection of books from all genres.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-bolt"></i>
+      <h4>Fast & Easy Search</h4>
+      <p>Find your favorite books in seconds.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-headphones"></i>
+      <h4>Audiobooks</h4>
+      <p>Listen to your books on the go.</p>
+    </div>
+  </div>
+</section> -->
+
+  <!-- Benefits Section -->
+  <section class="benefits section">
+    <div class="container">
+      <div class="benefits__content">
+
+        <div class="benefits__text animate-fadeInUp">
+          <h2 class="section__title">Why Choose <span class="highlight">BooksAura</span>?</h2>
+
+          <div class="benefits__list">
+            <div class="benefit-item-detailed">
+              <div class="benefit-check">✓</div>
+              <span class="benefit-text">Access thousands of books in one place</span>
+            </div>
+            <div class="benefit-item-detailed">
+              <div class="benefit-check">✓</div>
+              <span class="benefit-text">Discover trending and popular titles easily</span>
+            </div>
+            <div class="benefit-item-detailed">
+              <div class="benefit-check">✓</div>
+              <span class="benefit-text">Personalized recommendations for you</span>
+            </div>
+            <div class="benefit-item-detailed">
+              <div class="benefit-check">✓</div>
+              <span class="benefit-text">Read anytime, anywhere — on any device</span>
+            </div>
+          </div>
+
+       <a href="./books.html">  <button class="btn">Start Reading Now</button></a>
+        </div>
+
+        <div class="benefits__image animate-float">
+          <div class="floating-image-container">
+            <img src="./img/aafcc224-88f1-4da4-a11d-f10e30f8bb55.png" alt="Books illustration" class="floating-image">
+            <div class="floating-shadow"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="reviews">
+    <h2>What Our Readers Say 💬</h2>
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="review-top">
+          <img src="https://i.pravatar.cc/100?img=1" alt="User">
+          <div>
+            <h4>Ahmed Ali</h4>
+            <p>⭐️⭐️⭐️⭐️☆</p>
+          </div>
+        </div>
+        <p class="review-text">“BooksAura helped me discover amazing books I’d never heard of before. The UI is clean
+          and smooth.”</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <img src="https://i.pravatar.cc/100?img=2" alt="User">
+          <div>
+            <h4>Sara Mohamed</h4>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+        <p class="review-text">“Love how easy it is to browse and save books. Highly recommended for all book lovers!”
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <img src="https://i.pravatar.cc/100?img=3" alt="User">
+          <div>
+            <h4>Omar Hassan</h4>
+            <p>⭐️⭐️⭐️⭐️☆</p>
+          </div>
+        </div>
+        <p class="review-text">“A very smooth and beautiful reading platform. It made my reading journey better.”</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 📝 Categories -->
+  <!-- <section class="categories">
+    <h2>📚 Browse by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">Fiction</div>
+      <div class="category-card">Non-Fiction</div>
+      <div class="category-card">Mystery</div>
+      <div class="category-card">Science Fiction</div>
+      <div class="category-card">Biography</div>
+      <div class="category-card">Poetry</div>
+    </div>
+  </section> -->
+
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <h2>Stay Updated with <span>BooksAura</span> 📚</h2>
+      <p>Subscribe to our newsletter and never miss new books, recommendations, and exclusive offers.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>📚 BooksAura</h2>
+        <p>Your gateway to endless knowledge.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Popular Books</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 BooksAura. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <script src="bookss-data.js"></script>
+  <script>
+    function renderBooks(category, containerId) {
+      const container = document.getElementById(containerId);
+      const books = booksData.filter(book => book.category === category);
+
+      books.forEach(book => {
+        const card = document.createElement("div");
+        card.classList.add("book-card");
+        card.innerHTML = `
+        <img src="${book.image}" alt="${book.title}">
+        <h4>${book.title}</h4>
+        <p>${book.author}</p>
+      `;
+        card.addEventListener("click", () => {
+          localStorage.setItem("selectedBook", book.id);
+          window.location.href = "books_details.html";
+        });
+        container.appendChild(card);
+      });
+    }
+
+    renderBooks("Popular Books", "popular-slider");
+    renderBooks("Novels", "novel-slider");
+    renderBooks("Self Improvement", "book-slider");
+
+
+  // const userAction = document.getElementById("user-action");
+  // const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+  // if (isLoggedIn === "true") {
+  //   const username = localStorage.getItem("username") || "User";
+  //   userAction.innerHTML = `
+  //     <div class="user-menu">
+  //       <span>  ${username}</span>
+  //       <button id="logoutBtn" style="margin-left:10px;">Logout</button>
+  //     </div>
+  //   `;
+
+  //   document.getElementById("logoutBtn").addEventListener("click", () => {
+  //     localStorage.removeItem("isLoggedIn");
+  //     localStorage.removeItem("username");
+  //     window.location.reload();
+  //   });
+  // } else {
+  //   userAction.innerHTML = `<button onclick="window.location.href='Login_Register.html'" class="btn">Login</button>`;
+  // }
+
+
+  </script>
+
+
+  <script src="global.js"></script>
+  <script src="action.js"></script>
+</body>
+
+</html>

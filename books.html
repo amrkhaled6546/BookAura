@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BookAura</title>
+  <link rel="stylesheet" href="books.css">
+  <link rel="stylesheet" href="global.css">
+  <script src="books.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="https://i.postimg.cc/HsGZmCZd/logo2.png" alt="BookAura Logo">
+    </div>
+    <h3>Categories</h3>
+    <label><input type="checkbox" name="category" value="all" checked> All</label>
+    <label><input type="checkbox" name="category" value="fiction"> Fiction</label>
+    <label><input type="checkbox" name="category" value="non-fiction"> Non-Fiction</label>
+    <label><input type="checkbox" name="category" value="mystery"> Mystery</label>
+    <label><input type="checkbox" name="category" value="science"> Science Fiction</label>
+    <label><input type="checkbox" name="category" value="biography"> Biography</label>
+
+    <h3>Authors</h3>
+    <label><input type="checkbox" name="author" value="all" checked> All</label>
+    <label><input type="checkbox" name="author" value="amelia"> Amelia frost</label>
+    <label><input type="checkbox" name="author" value="micheal"> Micheal reed </label>
+    <label><input type="checkbox" name="author" value="john"> John parker</label>
+    <label><input type="checkbox" name="author" value="george"> George orwell</label>
+    <label><input type="checkbox" name="author" value="richard"> Richard Dawkins</label>
+
+    <h3>Language</h3>
+    <label><input type="checkbox" name="language" value="all" checked> All</label>
+    <label><input type="checkbox" name="language" value="english"> English</label>
+    <label><input type="checkbox" name="language" value="arabic"> Arabic</label>
+    <label><input type="checkbox" name="language" value="french"> French</label>
+    </div>
+  </aside>
+
+  <main class="main-content">
+<header>
+
+
+    <nav class="navbar">
+      <div class="logo">
+      
+        <span>Book<span style="  color: #f3e0c2;" >Aura</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html" class="">Home</a></li>
+        <li><a href="books.html" class="active">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search books..." id="searchInput">
+       
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        
+      </div>
+
+
+      <img src="https://i.postimg.cc/zvyjrxWW/profile.png" alt="Profile" class="profile-pic">
+        <di id="user-action"></div>
+  </header>
+
+    <section class="Explore">
+      <div class="section-header">
+        <h2>Explore Books</h2>
+      </div>
+
+      <div class="book-grid">
+        <div class="book-card" data-category="fiction" data-author="amelia" data-language="english" data-id="whispers">
+          <img src="https://i.postimg.cc/t4NC5260/wishpers.jpg" alt="Whispers">
+          <h3>Whispers of the Stars</h3>
+          <p>By Amelia Frost</p>
+        </div>
+
+        <div class="book-card" data-category="science" data-author="micheal" data-language="english"
+          data-id="hiddenforces">
+          <img src="https://i.postimg.cc/kgsq8DrR/hiddenforces.jpg" alt="force">
+          <h3>The Hidden Forces</h3>
+          <p>By Michael Reed</p>
+        </div>
+
+        <div class="book-card" data-category="non-fiction" data-author="john" data-language="english"
+          data-id="the_art_of_stillness">
+          <img src="https://i.postimg.cc/85r2yzYX/theart.jpg" alt="art">
+          <h3>The Art of Stillness</h3>
+          <p>By John Parker</p>
+        </div>
+
+        <div class="book-card" data-category="fiction" data-author="guin" data-language="english" data-id="her_legacy">
+          <img src="https://i.postimg.cc/3RpqXby1/legacy.jpg" alt="legacy">
+          <h3>Her Legacy</h3>
+          <p>By Guin Archer</p>
+        </div>
+
+        <div class="book-card" data-category="biography" data-author="sarah" data-language="english"
+          data-id="echoes_of_the_past">
+          <img src="https://i.postimg.cc/bNLB9nJj/enchoes.jpg" alt="enchoes">
+          <h3>Echoes of the Past</h3>
+          <p>By Sarah Morgan</p>
+        </div>
+
+        <div class="book-card" data-category="non-fiction" data-author="sophia" data-language="english"
+          data-id="journey_within">
+          <img src="https://i.postimg.cc/cHQDggj9/journey.jpg" alt="journey">
+          <h3>A Journey Within</h3>
+          <p>By Sophia Adams</p>
+        </div>
+
+        <div class="book-card" data-category="science" data-author="neil" data-language="english"
+          data-id="wonders_universe">
+          <img src="https://i.postimg.cc/MZ5DCS8m/wonder.jpg" alt="wonder">
+          <h3>Wonders of the Universe</h3>
+          <p>By Dr. Neil Harper</p>
+        </div>
+
+        <div class="book-card" data-category="science" data-author="alan" data-language="english"
+          data-id="chronos_rift">
+          <img src="https://i.postimg.cc/d1qC6hDc/chron.jpg" alt="chron">
+          <h3>Chronos Rift</h3>
+          <p>By Alan Steele</p>
+        </div>
+        <div class="book-card" data-category="mystery" data-author="liane" data-language="english"
+          data-id="big_little_lies">
+          <img src="https://i.postimg.cc/FRRR1375/big.jpg" alt="big">
+          <h3>Big Little Lies</h3>
+          <p>By Liane Moriarty</p>
+        </div>
+        <div class="book-card" data-category="science" data-author="frank" data-language="english" data-id="dune">
+          <img src="https://i.postimg.cc/Y0FmqYsf/dune.jpg" alt="dune">
+          <h3>Dune</h3>
+          <p>By Frank Herbert</p>
+        </div>
+        <div class="book-card" data-category="non-fiction" data-author="tara" data-language="english"
+          data-id="educated">
+          <img src="https://i.postimg.cc/JhdyNpws/edu.jpg" alt="edu">
+          <h3>Educated</h3>
+          <p>By Tara Westover</p>
+        </div>
+        <div class="book-card" data-category="science" data-author="andy" data-language="english" data-id="the_martian">
+          <img src="https://i.postimg.cc/tJG4kfBH/martin.jpg" alt="martin">
+          <h3>The Martian</h3>
+          <p>By Andy Weir</p>
+        </div>
+    </section>
+    <section class="Recomended">
+      <div class="section-header">
+        <h2 id="recommended-title">Recomended Books</h2>
+
+      </div>
+      <div class="book-grid">
+        <div class="book-card" data-category="science" data-author="oliver" data-language="english"
+          data-id="quantum_paradox">
+          <img src="https://i.postimg.cc/SKXQhq58/quantum.jpg" alt="quantum">
+          <h3>The Quantum Paradox</h3>
+          <p>By Oliver Grey</p>
+        </div>
+
+        <div class="book-card" data-category="mystery" data-author="carolyn" data-language="french"
+          data-id="silent_witness">
+          <img src="https://i.postimg.cc/2SyrQrzp/silent.jpg" alt="silent">
+          <h3>The Silent Witness</h3>
+          <p>By Carolyn Arnold</p>
+        </div>
+
+        <div class="book-card" data-category="biography" data-author="basil" data-language="english"
+          data-id="man_changed_everything">
+          <img src="https://i.postimg.cc/Qx4rxwcg/man.jpg" alt="man">
+          <h3>The Man Who Changed Everything</h3>
+          <p>By Basil Mahon</p>
+        </div>
+
+        <div class="book-card" data-category="fiction" data-author="steve" data-language="english"
+          data-id="dust_to_destiny">
+          <img src="https://i.postimg.cc/Rhg2hJJS/dust.jpg" alt="dust">
+          <h3>From Dust to Destiny</h3>
+          <p>By Steve Colins</p>
+        </div>
+
+        <div class="book-card" data-category="science" data-author="richard" data-language="english"
+          data-id="selfish_gene">
+          <img src="https://i.postimg.cc/7YQpy7yQ/selfish.jpg" alt="">
+          <h3>The Selfish Gene</h3>
+          <p>By Richard Dawkins</p>
+        </div>
+
+        <div class="book-card" data-category="fiction" data-author="george" data-language="english" data-id="1984">
+          <img src="https://i.postimg.cc/xdL7H4NF/george.jpg" alt="sel">
+          <h3>1984</h3>
+          <p>By George Orwell</p>
+        </div>
+
+        <div class="book-card" data-category="mystery" data-author="gillian" data-language="english"
+          data-id="gone_girl">
+          <img src="https://i.postimg.cc/j5XF3nXJ/gone.jpg" alt="gone">
+          <h3>Gone Girl</h3>
+          <p>By Gillian Flynn</p>
+        </div>
+        <div class="book-card" data-category="non-fiction" data-author="daniel" data-language="english"
+          data-id="thinking_fast_slow">
+          <img src="https://i.postimg.cc/7YbWX6TP/think.jpg" alt="">
+          <h3>Thinking, Fast and Slow</h3>
+          <p>By Daniel Kahneman</p>
+        </div>
+      </div>
+    </section>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>📚 BooksAura</h2>
+          <p>Your gateway to endless knowledge.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html">Popular Books</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 BooksAura. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+    <script>
+      const books = document.querySelectorAll('.book-card');
+
+      const filterGroups = ['category', 'author', 'language'];
+
+      filterGroups.forEach(group => setupFilter(group));
+
+      function setupFilter(groupName) {
+        const checkboxes = document.querySelectorAll(`input[name="${groupName}"]`);
+        checkboxes.forEach(ch => {
+          ch.addEventListener('change', () => {
+            if (ch.value === 'all' && ch.checked) {
+              checkboxes.forEach(other => {
+                if (other.value !== 'all') other.checked = false;
+              });
+            }
+
+            if (ch.value !== 'all' && ch.checked) {
+              checkboxes[0].checked = false;
+            }
+
+            const anyChecked = Array.from(checkboxes).some(cb => cb.checked && cb.value !== 'all');
+            if (!anyChecked) checkboxes[0].checked = true;
+
+            filterBooks();
+          });
+        });
+      }
+
+      function getSelectedValues(name) {
+        const selected = Array.from(document.querySelectorAll(`input[name="${name}"]:checked`))
+          .filter(ch => ch.value !== 'all')
+          .map(ch => ch.value.toLowerCase());
+        return selected;
+      }
+
+      function filterBooks() {
+        const selectedCategories = getSelectedValues('category');
+        const selectedAuthors = getSelectedValues('author');
+        const selectedLanguages = getSelectedValues('language');
+
+        books.forEach(book => {
+          const category = book.getAttribute('data-category').toLowerCase();
+          const author = book.getAttribute('data-author').toLowerCase();
+          const language = book.getAttribute('data-language').toLowerCase();
+
+          const matchCategory = selectedCategories.length === 0 || selectedCategories.includes(category);
+          const matchAuthor = selectedAuthors.length === 0 || selectedAuthors.includes(author);
+          const matchLanguage = selectedLanguages.length === 0 || selectedLanguages.includes(language);
+
+          if (matchCategory && matchAuthor && matchLanguage) {
+            book.classList.remove('hidden');
+          } else {
+            book.classList.add('hidden');
+          }
+        });
+      }
+
+      books.forEach(book => {
+        book.addEventListener('click', function () {
+          const bookId = this.getAttribute('data-id');
+          localStorage.setItem('selectedBook', bookId);
+          window.location.href = 'book_details.html';
+        });
+      });
+
+      filterBooks();
+    </script>
+    <script src="global.js"></script>
+    <script src="books.js"></script>
+</body>
+
+</html>

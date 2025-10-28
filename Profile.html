@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="Profile.css">
+  <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+  <header>
+
+
+    <nav class="navbar">
+      <div class="logo">
+        <span>Book<span style="  color: #f3e0c2;" >Aura</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html" class="">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search books..." id="searchInput">
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <img src="https://i.postimg.cc/zvyjrxWW/profile.png" alt="Profile" class="profile-pic">
+              <div id="user-action"></div>
+
+  </header>
+
+  <main class="profile-container">
+    <section class="profile-header">
+      <div class="profile-image"><img src="https://i.postimg.cc/Bvf8JLJ7/download.png" alt="Profile Photo"></div>
+      <h2 class="profile-name"></h2>
+      <p class="profile-email"></p>
+    </section>
+
+    <div class="profile-tabs">
+      <button class="tab-button active" onclick="openTab(event, 'favorites')">My Favorites</button>
+      <button class="tab-button" onclick="openTab(event, 'downloads')">Downloaded Books</button>
+    </div>
+
+    <div id="favorites" class="tab-content active"><h3>My Favorites</h3></div>
+    <div id="downloads" class="tab-content"><h3>Downloaded Books</h3></div>
+    
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 BookVerse. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="home.html">Home</a>
+      </div>
+    </div>
+  </footer>
+  <script src="global.js"></script>
+  <script src="Profile.js"></script>
+</body>
+</html>

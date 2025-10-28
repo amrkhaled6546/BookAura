@@ -1,0 +1,402 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #f3e0c2);
+}
+
+ .logo-section {
+            position: absolute;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: #f3e0c2;
+            display: flex;
+            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+       .logo-section img {
+    width: 700px;
+    margin-bottom: 10px;
+    margin-left: -130px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 850px;
+    height: 550px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+.container h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    margin: -10px 0;
+}
+
+.container p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 14.5px;
+    margin: 15px 0;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-box {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    z-index: 1;
+    transition: .6s ease-in-out 1.2s, visibility 0s 1s;
+}
+
+.container.active .form-box {
+    right: 50%;
+}
+
+.form-box.register {
+    visibility: hidden;
+}
+
+.container.active .form-box.register {
+    visibility: visible;
+}
+
+.input-box {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-box input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    background: #eee;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-box img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    opacity: 0.7;
+}
+
+.forgot-link {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: -15px 0 15px;
+}
+
+.forgot-link a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-size: 14.5px;
+    color: #194850;
+}
+
+.btn {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 48px;
+    background: #194850;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+.or {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 20px 0;
+    color: #194850;
+}
+.social-icons {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    border-color: #194850;
+    transform: scale(1.1);
+}
+
+.social-icons a img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.toggle-box {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.toggle-box::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    left: -250%;
+    width: 300%;
+    height: 100%;
+    background: #194850;
+    border-radius: 150px;
+    z-index: 2;
+    transition: 1.8s ease-in-out;
+}
+
+.container.active .toggle-box::before {
+    left: 50%;
+}
+
+.toggle-panel {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: .6s ease-in-out;
+}
+.toggle-panel h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.toggle-panel.toggle-left {
+    left: 0;
+    transition-delay: 1.2s;
+}
+
+.container.active .toggle-panel.toggle-left {
+    left: -50%;
+    transition-delay: .6s;
+}
+
+.toggle-panel.toggle-right {
+    right: -50%;
+    transition-delay: .6s;
+}
+
+.container.active .toggle-panel.toggle-right {
+    right: 0;
+    transition-delay: 1.2s;
+}
+
+.toggle-panel p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.toggle-panel .btn {
+    width: 160px;
+    height: 46px;
+    background: transparent;
+    border: 2px solid #fff;
+    box-shadow: none;
+}
+/* شاشة تحميل */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 224, 194, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* شكل الدائرة المتحركة */
+.loader {
+    border: 8px solid #f3e0c2;
+    border-top: 8px solid #194850;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+@media screen and (max-width: 650px) {
+    .container {
+        height: calc(100vh - 40px);
+    }
+    
+    .form-box {
+        bottom: 0;
+        width: 100%;
+        height: 70%;
+    }
+    
+    .container.active .form-box {
+        right: 0;
+        bottom: 30%;
+    }
+    
+    .toggle-box::before {
+        left: 0;
+        top: -270%;
+        width: 100%;
+        height: 300%;
+        border-radius: 20vw;
+    }
+    
+    .container.active .toggle-box::before {
+        left: 0;
+        top: 70%;
+    }
+    
+    .container.active .toggle-panel.toggle-left {
+        left: 0;
+        top: -30%;
+    }
+    
+    .toggle-panel {
+        width: 100%;
+        height: 30%;
+    }
+    
+    .toggle-panel.toggle-left {
+        top: 0;
+    }
+    
+    .toggle-panel.toggle-right {
+        right: 0;
+        bottom: -30%;
+    }
+    
+    .container.active .toggle-panel.toggle-right {
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form-box {
+        padding: 20px;
+    }
+    
+    .toggle-panel h1 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 900px) {
+  .logo-section {
+    display: none;
+  }
+  body {
+    justify-content: center;
+  }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
