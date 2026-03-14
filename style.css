@@ -180,6 +180,39 @@ body{
   line-height: 30px;      
 }
 
+.trust-strip {
+  max-width: 1100px;
+  margin: -30px auto 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  box-shadow: 0 12px 30px rgba(9, 57, 67, 0.12);
+}
+
+.trust-item {
+  text-align: center;
+  border-right: 1px solid rgba(9, 57, 67, 0.15);
+}
+
+.trust-item:last-child {
+  border-right: 0;
+}
+
+.trust-number {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #093943;
+}
+
+.trust-label {
+  color: #555;
+  font-size: 0.95rem;
+}
+
 /* 
 .features {
   padding: 60px 20px;
@@ -418,6 +451,17 @@ body{
   padding: 15px;
   transition: transform 0.3s ease;
 }
+
+.book-card:focus-visible {
+  outline: 3px solid #0b636b;
+  outline-offset: 2px;
+}
+
+.empty-state {
+  color: #194850;
+  margin-top: 10px;
+  font-weight: 600;
+}
 .book-card h4 {
   font-size: 16px;
   /* margin: 10px 0 5px; */
@@ -522,6 +566,12 @@ body{
   background: linear-gradient(to right,#194850 , rgb(73, 191, 227));  
   color: white;
   transform: translateY(-2px);
+}
+
+.newsletter-success {
+  margin-top: 15px;
+  color: #f3e0c2;
+  font-weight: 600;
 }
 
 
@@ -668,6 +718,17 @@ body{
   line-height: 1.5;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
@@ -679,6 +740,39 @@ body{
 
   .nav-links {
     display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: #14464d;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .trust-strip {
+    margin: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .trust-item {
+    border-right: 0;
+    border-bottom: 1px solid rgba(9, 57, 67, 0.15);
+    padding-bottom: 10px;
+  }
+
+  .trust-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
   }
 
 .hero-content h1 {
@@ -807,4 +901,3 @@ body{
     display: block;
   }
 }
-

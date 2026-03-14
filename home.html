@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
-  <script src="bookss-data.js"></script>
-
 </head>
 
 <body>
@@ -44,7 +42,7 @@
 
 
       <img src="https://i.postimg.cc/zvyjrxWW/profile.png" alt="Profile" class="profile-pic">
-        <di id="user-action"></div>
+      <div id="user-action"></div>
   </header>
 
 
@@ -53,6 +51,21 @@
       <h1>Discover free books, audiobooks & <br> magazines from your library</h1>
       <p>Thousands of titles, one magical place 📖✨</p>
       <button class="btn"><a href="books.html">Explore Now</a></button>
+    </div>
+  </section>
+
+  <section class="trust-strip" aria-label="Platform highlights">
+    <div class="trust-item">
+      <span class="trust-number">20K+</span>
+      <span class="trust-label">Active Readers</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-number">5K+</span>
+      <span class="trust-label">Curated Titles</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-number">99%</span>
+      <span class="trust-label">Reader Satisfaction</span>
     </div>
   </section>
 
@@ -69,6 +82,7 @@
       </div>
     </div>
     <div class="book-slider" id="popular-slider"></div>
+    <p class="empty-state" id="popular-slider-empty" hidden>No books found in this section.</p>
   </section>
 
   <section class="books">
@@ -80,6 +94,7 @@
       </div>
     </div>
     <div class="book-slider" id="novel-slider"></div>
+    <p class="empty-state" id="novel-slider-empty" hidden>No books found in this section.</p>
   </section>
 
   <section class="books">
@@ -92,6 +107,7 @@
     </div>
 
     <div class="book-slider" id="book-slider"></div>
+    <p class="empty-state" id="book-slider-empty" hidden>No books found in this section.</p>
   </section>
 
   <!-- <section class="features">
@@ -217,10 +233,11 @@
     <div class="newsletter-container">
       <h2>Stay Updated with <span>BooksAura</span> 📚</h2>
       <p>Subscribe to our newsletter and never miss new books, recommendations, and exclusive offers.</p>
-      <form class="newsletter-form">
+      <form class="newsletter-form" id="newsletterForm">
         <input type="email" placeholder="Enter your email address" required>
         <button type="submit">Subscribe</button>
       </form>
+      <p class="newsletter-success" id="newsletterSuccess" aria-live="polite" hidden>✅ Thank you for subscribing! We'll keep you posted.</p>
     </div>
   </section>
 
@@ -255,62 +272,14 @@
     </div>
 
     <div class="footer-bottom">
-      <p>© 2025 BooksAura. All rights reserved.</p>
+      <p>© <span id="currentYear">2025</span> BooksAura. All rights reserved.</p>
     </div>
   </footer>
 
 
 
   <script src="bookss-data.js"></script>
-  <script>
-    function renderBooks(category, containerId) {
-      const container = document.getElementById(containerId);
-      const books = booksData.filter(book => book.category === category);
-
-      books.forEach(book => {
-        const card = document.createElement("div");
-        card.classList.add("book-card");
-        card.innerHTML = `
-        <img src="${book.image}" alt="${book.title}">
-        <h4>${book.title}</h4>
-        <p>${book.author}</p>
-      `;
-        card.addEventListener("click", () => {
-          localStorage.setItem("selectedBook", book.id);
-          window.location.href = "books_details.html";
-        });
-        container.appendChild(card);
-      });
-    }
-
-    renderBooks("Popular Books", "popular-slider");
-    renderBooks("Novels", "novel-slider");
-    renderBooks("Self Improvement", "book-slider");
-
-
-  // const userAction = document.getElementById("user-action");
-  // const isLoggedIn = localStorage.getItem("isLoggedIn");
-
-  // if (isLoggedIn === "true") {
-  //   const username = localStorage.getItem("username") || "User";
-  //   userAction.innerHTML = `
-  //     <div class="user-menu">
-  //       <span>  ${username}</span>
-  //       <button id="logoutBtn" style="margin-left:10px;">Logout</button>
-  //     </div>
-  //   `;
-
-  //   document.getElementById("logoutBtn").addEventListener("click", () => {
-  //     localStorage.removeItem("isLoggedIn");
-  //     localStorage.removeItem("username");
-  //     window.location.reload();
-  //   });
-  // } else {
-  //   userAction.innerHTML = `<button onclick="window.location.href='Login_Register.html'" class="btn">Login</button>`;
-  // }
-
-
-  </script>
+  
 
 
   <script src="global.js"></script>
